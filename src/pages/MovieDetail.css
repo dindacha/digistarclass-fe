@@ -1,0 +1,114 @@
+/* Theme Styles */
+.light-mode {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --card-background-color: #f4f4f4;
+    --button-color: #61dafb;
+    --button-hover-color: #21a1f1;
+}
+
+.dark-mode {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --card-background-color: #444444;
+    --button-color: #697565;
+    --button-hover-color: #3C3D37;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1 {
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: var(--card-background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.movie-title button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+.movie-title button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.movie-overview {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.movie-body {
+    margin-top: 100px;
+}
+
+.movie-detail img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.movie-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.movie-detail p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px; 
+    word-wrap: break-word; 
+}
+
+.movie-detail button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.movie-detail button:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

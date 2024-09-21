@@ -1,0 +1,23 @@
+/* src/styles/Finance.css */
+.container {
+    display: flex;
+    flex-direction: column; /* Atur jika kamu ingin item dalam kolom */
+    align-items: center; /* Pusatkan item secara horizontal */
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-around; /* Atur jarak antar item */
+    flex-wrap: wrap; /* Biarkan item membungkus ke baris berikutnya jika diperlukan */
+    gap: 16px; /* Jarak antar item */
+  }
+  
+  .section {
+    flex: 1; /* Atur proporsi ukuran masing-masing bagian */
+    max-width: 300px; /* Maksimum lebar bagian */
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
